@@ -16,12 +16,35 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DB Diseño Integral | Diseño integral de espacios, interiores y fachadas",
-  description: "Diseño integral de espacios, diseño de interiores, fachadas, asesorías, renders y proyectos residenciales/comerciales. Transformamos ideas en espacios pensados para vivir.",
+  title: "DB Diseño Integral | Diseño de interiores, renders y asesorías",
+  description: "Diseño integral de espacios, interiores, fachadas, renders y asesorías online o presenciales para proyectos residenciales y comerciales.",
+  keywords: [
+    "diseño integral",
+    "diseño de interiores",
+    "renders",
+    "fachadas",
+    "asesoría de diseño",
+    "proyectos residenciales",
+    "proyectos comerciales",
+    "diseño de espacios",
+  ],
+  authors: [{ name: "DB Diseño Integral" }],
   openGraph: {
-    title: "DB Diseño Integral",
-    description: "Diseño integral de espacios, interiores y fachadas. Consultanos por WhatsApp.",
+    title: "DB Diseño Integral | Diseño de interiores, renders y asesorías",
+    description: "Diseño integral de espacios, interiores, fachadas, renders y asesorías online o presenciales para proyectos residenciales y comerciales.",
+    url: "https://dbdisenointegral.com",
+    siteName: "DB Diseño Integral",
+    locale: "es_AR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DB Diseño Integral",
+    description: "Diseño integral de espacios, interiores, fachadas, renders y asesorías.",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -32,6 +55,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${dmSerif.variable} ${inter.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              name: "DB Diseño Integral",
+              description: "Diseño integral de espacios, interiores, fachadas, renders y asesorías online o presenciales para proyectos residenciales y comerciales.",
+              url: "https://dbdisenointegral.com",
+              sameAs: [
+                "https://www.instagram.com/db.disenointegral/",
+              ],
+              areaServed: {
+                "@type": "Country",
+                name: "Argentina",
+              },
+              priceRange: "$$",
+            }),
+          }}
+        />
+      </head>
       <body className="bg-bg text-text">
         {children}
       </body>

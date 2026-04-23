@@ -411,7 +411,11 @@ function Portfolio() {
               className="card-hover group rounded-lg overflow-hidden bg-white"
             >
               {/* Imagen */}
-              <div className={`h-56 ${project.image} project-card-bg relative`}>
+              <div 
+                className={`h-56 ${project.image} project-card-bg relative`}
+                role="img"
+                aria-label={`${project.title} - ${project.description}`}
+              >
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
                   <a 
                     href={getWhatsAppLink(`Me interesa el proyecto: ${project.title}`)}
