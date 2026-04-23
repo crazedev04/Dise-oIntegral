@@ -68,10 +68,6 @@ export default function RootLayout({
               sameAs: [
                 "https://www.instagram.com/db.disenointegral/",
               ],
-              areaServed: {
-                "@type": "Country",
-                name: "Argentina",
-              },
               priceRange: "$$",
             }),
           }}
