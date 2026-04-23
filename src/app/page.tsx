@@ -363,7 +363,7 @@ function Portfolio() {
     {
       title: "Cantero / Exterior",
       category: "Exterior",
-      description: "Diseño decantero exterior con materiales nobles y vegetación adaptada.",
+      description: "Propuesta exterior para renovar el ingreso, el jardín o un sector verde del hogar.",
       image: "bg-gradient-to-br from-slate-200 via-gray-100 to-slate-200",
     },
     {
@@ -396,8 +396,7 @@ function Portfolio() {
             Proyectos y visualizaciones
           </h2>
           <p className="text-text-muted mt-4 max-w-xl mx-auto">
-            Cada proyecto nace de una necesidad concreta. Algunos son obras ejecutadas, 
-            otros son visualizaciones para anticipar el resultado.
+            Una selección de proyectos, renders y propuestas visuales pensadas para anticipar cómo puede transformarse cada espacio.
           </p>
         </motion.div>
 
@@ -414,9 +413,14 @@ function Portfolio() {
               {/* Imagen */}
               <div className={`h-56 ${project.image} project-card-bg relative`}>
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                  <span className="text-white text-sm font-medium px-4 py-2 border border-white/50 rounded">
-                    Ver detalles
-                  </span>
+                  <a 
+                    href={getWhatsAppLink(`Me interesa el proyecto: ${project.title}`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-sm font-medium px-4 py-2 border border-white/50 rounded hover:bg-white/20"
+                  >
+                    Consultar por este estilo
+                  </a>
                 </div>
               </div>
               
@@ -490,7 +494,7 @@ function About() {
             </h2>
             <p className="text-text-muted mb-6">
               DB Diseño Integral es un estudio dedicado a transformar espacios 
-              através de una mirada integral: funcional, estética y planificada.
+              a través de una mirada integral: funcional, estética y planificada.
             </p>
             <p className="text-text-muted mb-8">
               Cada proyecto es único. Nos interesa entender cómo vivís, cómo trabajás, 
