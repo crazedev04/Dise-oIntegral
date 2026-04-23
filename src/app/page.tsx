@@ -48,7 +48,11 @@ function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <a href="#" className="flex items-center gap-2">
-            <span className="db-monogram">{siteConfig.brandNameShort}</span>
+            <img 
+              src="/assets/Logo.png" 
+              alt="DB Diseño Integral" 
+              className="h-10 w-auto"
+            />
             <span className="font-serif text-lg lg:text-xl hidden sm:block">
               {siteConfig.brandName}
             </span>
@@ -603,7 +607,11 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
             <div className="flex items-center gap-2 mb-2 justify-center md:justify-start">
-              <span className="db-monogram">{siteConfig.brandNameShort}</span>
+              <img 
+                src="/assets/Logo.png" 
+                alt="DB Diseño Integral" 
+                className="h-8 w-auto"
+              />
               <span className="font-serif text-lg">{siteConfig.brandName}</span>
             </div>
             <div className="flex gap-4 justify-center md:justify-start">
