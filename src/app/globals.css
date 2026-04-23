@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "DM Serif Display", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  /* Paleta DB Diseño Integral */
+  --color-bg: #F4F2EE;
+  --color-bg-alt: #E8E6DF;
+  --color-white-warm: #FAF8F4;
+  --color-db-green: #2F4438;
+  --color-sage: #6F7F6A;
+  --color-warm-gray: #B8B4AA;
+  --color-text: #1F1F1D;
+  --color-text-muted: #5F5D58;
+  --color-border: #D8D3C8;
+}
+
+@layer base {
+  :root {
+    --bg: #F4F2EE;
+    --bg-alt: #E8E6DF;
+    --white-warm: #FAF8F4;
+    --db-green: #2F4438;
+    --sage: #6F7F6A;
+    --text: #1F1F1D;
+    --text-muted: #5F5D58;
+    --border: #D8D3C8;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  ::selection {
+    background-color: var(--sage);
+    color: white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Botón Primary - Verde DB */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--db-green);
+    color: white;
+    font-weight: 500;
+    padding: 0.875rem 1.5rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #243829;
+    transform: translateY(-1px);
+  }
+
+  /* Botón Outline */
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: var(--text);
+    font-weight: 500;
+    padding: 0.875rem 1.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .btn-outline:hover {
+    border-color: var(--db-green);
+    color: var(--db-green);
+  }
+
+  /* Sección padding */
+  .section-padding {
+    padding: 5rem 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding: 7rem 2rem;
+    }
+  }
+
+  /* Card con hover premium */
+  .card-hover {
+    transition: all 0.4s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(47, 68, 56, 0.1);
+  }
+
+  /* Línea de timeline */
+  .timeline-line {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 200px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+  }
+
+  /* Fondo con patrón sutil */
+  .bg-pattern-subtle {
+    background-image: 
+      radial-gradient(circle at 1px 1px, var(--border) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  /* Monograma DB */
+  .db-monogram {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--db-green);
+    letter-spacing: -0.02em;
+  }
+
+  /* Gradient backgrounds para proyectos */
+  .project-card-bg {
+    transition: all 0.5s ease;
+  }
+
+  .project-card-bg:hover {
+    transform: scale(1.02);
+  }
+}
