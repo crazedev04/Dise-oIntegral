@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { 
   Menu, X, ArrowRight, Instagram, MessageCircle, 
@@ -388,10 +389,11 @@ function Portfolio() {
             >
               {/* Imagen */}
               <div className="h-56 project-card-bg relative overflow-hidden">
-                <img 
+                <Image 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
                   <a 
