@@ -278,7 +278,7 @@ function Services() {
 
 function Process() {
   return (
-    <section id="proceso" className="section-padding bg-bg">
+    <section id="proceso" className="py-20 lg:py-28 bg-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -290,14 +290,14 @@ function Process() {
             Proceso
           </span>
           <h2 className="text-3xl md:text-4xl mt-3">
-            Un camino claro hacia tu espacio ideal
+            Un proceso claro para transformar tu espacio
           </h2>
         </motion.div>
 
         {/* Desktop - Timeline horizontal */}
         <div className="hidden lg:block relative">
           {/* Línea conectora */}
-          <div className="absolute top-8 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+          <div className="absolute top-8 left-0 right-0 h-px bg-border opacity-60" />
           
           <div className="grid grid-cols-5 gap-4 relative">
             {processSteps.map((item, index) => (
