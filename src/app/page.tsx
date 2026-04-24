@@ -354,33 +354,7 @@ function Process() {
 }
 
 function Portfolio() {
-  // Proyectos actualizados
-  const portfolioItems = [
-    {
-      title: "Remodelación funcional",
-      category: "Interior",
-      description: "Transformación de espacio existente para optimizar funcionalidad y circulación.",
-      image: "bg-gradient-to-br from-stone-200 via-stone-100 to-stone-200",
-    },
-    {
-      title: "Cantero / Exterior",
-      category: "Exterior",
-      description: "Propuesta exterior para renovar el ingreso, el jardín o un sector verde del hogar.",
-      image: "bg-gradient-to-br from-slate-200 via-gray-100 to-slate-200",
-    },
-    {
-      title: "Viví tu hogar antes de construir",
-      category: "Visualización",
-      description: "Render realista para visualizar el proyecto antes de ejecutarlo.",
-      image: "bg-gradient-to-br from-stone-300 via-stone-200 to-stone-300",
-    },
-    {
-      title: "Proyectos personalizados",
-      category: "Integral",
-      description: "Soluciones a medida para necesidades específicas de cada cliente.",
-      image: "bg-gradient-to-br from-gray-200 via-stone-100 to-gray-200",
-    },
-  ];
+  const portfolioItems = projects;
 
   return (
     <section id="proyectos" className="section-padding bg-bg-alt">
@@ -413,11 +387,12 @@ function Portfolio() {
               className="card-hover group rounded-lg overflow-hidden bg-white"
             >
               {/* Imagen */}
-              <div 
-                className={`h-56 ${project.image} project-card-bg relative`}
-                role="img"
-                aria-label={`${project.title} - ${project.description}`}
-              >
+              <div className="h-56 project-card-bg relative overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
                   <a 
                     href={getWhatsAppLink(`Me interesa el proyecto: ${project.title}`)}

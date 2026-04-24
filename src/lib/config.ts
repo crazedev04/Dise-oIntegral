@@ -2,17 +2,10 @@
 // Editar aquí los datos principales
 
 export const siteConfig = {
-  // Nombre de la marca
   brandName: "DB Diseño Integral",
   brandNameShort: "DB",
-  
-  // WhatsApp: formato internacional sin +
   whatsapp: "549XXXXXXXXXX",
-  
-  // Instagram URL
   instagram: "https://www.instagram.com/db.disenointegral/",
-  
-  // Crédito del desarrollador
   developerName: "Belatech",
   developerUrl: "",
 };
@@ -46,28 +39,28 @@ export const services = [
 
 export const projects = [
   {
-    title: "Casa Lumen",
-    category: "Residencial",
-    description: "Diseño residencial con enfoque en luz, calidez y funcionalidad.",
-    image: "bg-gradient-to-br from-slate-200 via-stone-100 to-stone-200",
+    title: "Remodelación funcional",
+    category: "Interior",
+    description: "Diseño interior pensado para optimizar espacios, mejorar la circulación y crear ambientes más habitables.",
+    image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    title: "Viví tu hogar antes de construir",
+    category: "Visualización",
+    description: "Visualización interior para anticipar distribución, materiales y atmósfera antes de avanzar con la obra.",
+    image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     title: "Fachada residencial",
     category: "Fachada",
-    description: "Propuesta visual para renovar la identidad exterior de una vivienda.",
-    image: "bg-gradient-to-br from-slate-300 via-gray-200 to-slate-300",
+    description: "Propuesta visual para renovar la identidad exterior de una vivienda con una estética actual y sobria.",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&cs=tinysrgb&w=800",
   },
   {
-    title: "Espacio comercial",
-    category: "Comercial",
-    description: "Diseño pensado para mejorar experiencia, circulación y presencia de marca.",
-    image: "bg-gradient-to-br from-stone-300 via-stone-200 to-stone-300",
-  },
-  {
-    title: "Render interior",
-    category: "Visualización",
-    description: "Visualización de ambiente para anticipar materiales, colores y composición.",
-    image: "bg-gradient-to-br from-gray-200 via-stone-100 to-gray-200",
+    title: "Cantero exterior",
+    category: "Exterior",
+    description: "Propuesta exterior para renovar el ingreso, el jardín o un sector verde del hogar.",
+    image: "https://images.pexels.com/photos/9624641/pexels-photo-9624641.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
 ];
 
