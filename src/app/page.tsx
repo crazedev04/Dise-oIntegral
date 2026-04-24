@@ -50,7 +50,7 @@ function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <a href="#" className="flex items-center gap-2">
             <img 
-              src="/Logo.png" 
+              src="/Dise-oIntegral/Logo.png" 
               alt="DB Diseño Integral" 
               className="h-10 w-auto"
             />
@@ -583,7 +583,7 @@ function Footer() {
           <div className="text-center md:text-left">
             <div className="flex items-center gap-2 mb-2 justify-center md:justify-start">
               <img 
-                src="/Logo.png" 
+                src="/Dise-oIntegral/Logo.png" 
                 alt="DB Diseño Integral" 
                 className="h-8 w-auto"
               />

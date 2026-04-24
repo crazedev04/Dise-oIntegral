@@ -16,6 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://crazedev04.github.io/Dise-oIntegral"),
   title: "DB Diseño Integral | Diseño de interiores, renders y asesorías",
   description: "Diseño integral de espacios, interiores, fachadas, renders y asesorías online o presenciales para proyectos residenciales y comerciales.",
   keywords: [
