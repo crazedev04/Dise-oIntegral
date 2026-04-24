@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "DB Diseño Integral" }],
   openGraph: {
-    title: "DB Diseño Integral | Diseño de interiores, renders y asesorías",
+    title: " Diseño Integral | Diseño de interiores, renders y asesorías",
     description: "Diseño integral de espacios, interiores, fachadas, renders y asesorías online o presenciales para proyectos residenciales y comerciales.",
     url: "https://dbdisenointegral.com",
     siteName: "DB Diseño Integral",

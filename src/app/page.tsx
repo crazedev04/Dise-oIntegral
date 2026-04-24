@@ -177,7 +177,7 @@ function Hero() {
             style={{ y }}
             className="relative hidden lg:block"
           >
-            <div className="aspect-[4/5] bg-gradient-to-br from-stone-200 via-stone-100 to-stone-200 rounded-lg overflow-hidden">
+            <div className="aspect-[3/3] bg-gradient-to-br from-stone-200 via-stone-100 to-stone-200 rounded-lg overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="db-monogram text-8xl mb-4"> <img 
@@ -185,9 +185,7 @@ function Hero() {
               alt="Proyecto de diseño integral" 
               className="w-full h-full object-cover"
             /></div>
-                  <p className="text-text-muted text-sm uppercase tracking-widest">
-                    Render / Interior / Fachada
-                  </p>
+                 
                 </div>
               </div>
             </div>
